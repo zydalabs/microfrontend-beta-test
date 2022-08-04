@@ -4,10 +4,6 @@ import { arrayOfOrders } from "./constants";
 
 function OrderDetail(props) {
   const [orderDetail, setOrderDetail] = useState({});
-  console.log(
-    "🚀 ~ file: OrderDetails.js ~ line 7 ~ OrderDetail ~ orderDetail",
-    orderDetail
-  );
 
   useEffect(() => {
     const orderID = parseInt(props.match.params.orderid);
@@ -15,7 +11,7 @@ function OrderDetail(props) {
     if (index !== -1) {
       setOrderDetail(arrayOfOrders[index]);
     }
-  }, []);
+  }, [props]);
 
   return (
     <div className="container mt-5">

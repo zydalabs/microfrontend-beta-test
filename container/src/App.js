@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { createBrowserHistory } from "history";
 import MicroFrontend from "./MicroFrontend";
 
 import "./App.css";
-
-const defaultHistory = createBrowserHistory();
 
 const {
   REACT_APP_ORDERS_HOST: ordersHost,
