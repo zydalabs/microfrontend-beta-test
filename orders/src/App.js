@@ -12,7 +12,7 @@ function App({ history = defaultHistory }) {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={Orders} />
+        {/* <Route exact path="/" component={Orders} /> */}
         <Route exact path="/orders" component={OrdersList} />
         <Route path="/orders/orderdetails/:orderid" component={OrderDetails} />
       </Switch>

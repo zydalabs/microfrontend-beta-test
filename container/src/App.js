@@ -34,11 +34,21 @@ function Home({ history }) {
   );
 }
 
+// function MarketingHome({ history }) {
+//   return (
+//     <div className="container">
+//       <Header />
+//       <Marketing />
+//     </div>
+//   );
+// }
+
 function App() {
   return (
     <BrowserRouter>
       <Switch>
         <Route path="/" component={Home} />
+        {/* <Route path="/" component={MarketingHome} /> */}
       </Switch>
     </BrowserRouter>
   );
